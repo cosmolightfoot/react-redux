@@ -81,3 +81,4 @@ store.dispatch({
 });
 
 console.log('remove chips', store.getState());
+
