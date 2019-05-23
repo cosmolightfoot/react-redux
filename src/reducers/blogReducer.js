@@ -3,17 +3,15 @@ import {
   RMV_POST
 } from '../actions/postActions';
 
-const initialState = {
-  posts: []
-};
+const initialState = [];
 
 export default function blogReducer(state = initialState, action) {
   switch(action.type) {
     case ADD_POST:
-      return { ...state, posts: [...state.posts, action.payload] };
+      return [...state, action.payload];
       
     case RMV_POST:
-      return { ...state, posts: state.posts.filter(post => post.title !== action.payload.title) };
+      return [...state.slice(0, action.payload), ...state.slice((action.payload + 1))];
         
     default: return state;
   }

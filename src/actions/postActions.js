@@ -5,7 +5,7 @@ export function addPost(title, body) {
   return { type: ADD_POST, payload: { title, body } };
 }
 
-export function removePost(title, body) {
-  return { type: RMV_POST, payload: { title, body } };
+export function removePost(index) {
+  return { type: RMV_POST, payload: index };
 }
 
