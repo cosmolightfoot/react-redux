@@ -1,11 +1,9 @@
-import { 
-  ADD_DRINK,
-  ADD_SANDWICH,
-  ADD_CHIPS,
-  RMV_DRINK,
-  RMV_SANDWICH,
-  RMV_CHIPS
-} from './index';
+export const ADD_DRINK = 'ADD_DRINK';
+export const ADD_CHIPS = 'ADD_CHIPS';
+export const ADD_SANDWICH = 'ADD_SANDWICH';
+export const RMV_DRINK = 'RMV_DRINK';
+export const RMV_CHIPS = 'RMV_CHIPS';
+export const RMV_SANDWICH = 'RMV_SANDWICH';
 
 export function addDrink(drink) {
   return { type: ADD_DRINK, payload: drink };
