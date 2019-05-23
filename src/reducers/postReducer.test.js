@@ -1,4 +1,4 @@
-import blogReducer from './blogReducer';
+import blogReducer from './postReducer';
 import {
   addPost,
   removePost

@@ -1,5 +1,5 @@
 import lunchReducer from './lunchReducer';
-import blogReducer from './blogReducer';
+import blogReducer from './postReducer';
 import { combineReducers } from 'redux';
 
 export default combineReducers({
