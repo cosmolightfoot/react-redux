@@ -15,10 +15,12 @@ function Posts({ posts }) {
 }
 
 Posts.propTypes = {
-  posts: PropTypes.shape({
-    id: PropTypes.number.isRequired,
-    title: PropTypes.string.isRequired
-  }).isRequired
+  posts: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      title: PropTypes.string.isRequired
+    }).isRequired
+  ).isRequired
 };
 
 export default Posts;

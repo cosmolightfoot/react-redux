@@ -5,7 +5,7 @@ import {
 
 const initialState = [];
 
-export default function blogReducer(state = initialState, action) {
+export default function postReducer(state = initialState, action) {
   switch(action.type) {
     case ADD_POST:
       return [...state, action.payload];
