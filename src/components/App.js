@@ -5,15 +5,15 @@ import {
   Route,
   Link
 } from 'react-router-dom';
+import Home from './Home.js';
 
-// import PostById from 
 
 export default function App() {
   return (
     <Router>
       <Link to="/">Home</Link>
       <Switch>
-        <Route path="/:posts/:id" component={PostById} />
+        {/* <Route path="/:posts/:id" component={PostById} /> */}
         <Route path="/" component={Home} />
       </Switch>
     </Router>
