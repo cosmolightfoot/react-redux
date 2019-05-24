@@ -1,9 +1,9 @@
-import lunchReducer from './lunchReducer';
-import blogReducer from './postReducer';
+import comments from './commentReducer';
+import posts from './postReducer';
 import { combineReducers } from 'redux';
 
 export default combineReducers({
-  lunchReducer,
-  blogReducer
+  comments,
+  posts
 });
 
